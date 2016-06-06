@@ -23,7 +23,8 @@ group :development, :test do
   gem "simplecov", require: false
   gem 'database_cleaner'
   gem 'shoulda-matchers', '~> 3.1'
-  gem "factory_girl"  
+  gem "factory_girl"
+  gem "capybara"
 end
 
 group :development do

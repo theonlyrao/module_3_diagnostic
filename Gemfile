@@ -11,9 +11,19 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem "twitter-bootstrap-rails"
 gem "therubyracer"
 gem "less-rails"
+gem "figaro"
+gem "faraday"
+gem 'active_model_serializers', github: "rails-api/active_model_serializers"
+gem 'responders'
 
 group :development, :test do
   gem 'byebug'
+  gem 'rspec-rails', '~> 3.4'
+  gem "vcr"
+  gem "simplecov", require: false
+  gem 'database_cleaner'
+  gem 'shoulda-matchers', '~> 3.1'
+  gem "factory_girl"  
 end
 
 group :development do

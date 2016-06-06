@@ -18,11 +18,7 @@
         1,
         1,
         1,
-        1,
-        0,
-        0,
-        0,
-        0,
+        null,
         0,
         null,
         null,
@@ -256,7 +252,7 @@
       "/Users/ashwin/Turing/misc/alt-fuel-finder/config/initializers/pusher.rb": [
         1,
         1,
-        0,
+        1,
         null,
         null,
         null
@@ -295,6 +291,10 @@
       "/Users/ashwin/Turing/misc/alt-fuel-finder/app/controllers/transportation_fuel_controller.rb": [
         1,
         1,
+        1,
+        1,
+        1,
+        0,
         null,
         null
       ],
@@ -311,10 +311,12 @@
         null,
         null,
         1,
+        0,
+        0,
         null,
         null
       ]
     },
-    "timestamp": 1465227608
+    "timestamp": 1465228500
   }
 }

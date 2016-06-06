@@ -12,14 +12,10 @@ RSpec.describe TransportationFuelController, type: :feature do
 # And the stations should be limited to Electric and Propane
       # And for each of the stations I should see Name, Address, Fuel Types, Distance, and Access Times
       visit root_path
-      save_and_open_page
       fill_in "Zip", with: "80203"
       click_on "Locate"
-      expect(current_url).to eq("http::localhost/3000/search?zip=380201")
-      conn = Faraday.new("https://developer.nrel.gov")
-      response = conn.get "/api/alt-fuel-stations/v1.json?api_key=#{Pusher.nrel_api_key}&lat=35.45&lon=-82.98"
-      stations = JSON.parse(response.body)
-      expect(stations.count).to eq(10)
+      #expect(current_url).to eq("http::localhost/3000/search?zip=380201")
+      expect(page).to have_content("10 closest stations")
     end
   end
 end

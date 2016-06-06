@@ -1,9 +1,9 @@
 <h1>Transportation Fuel Index</h1>
 
-<p><%= @stations.take(10).count %> closest stations</p>
+<p><%= @stations.count %> closest stations</p>
 
 <ol>
     <% @stations.each do |station| %>
-	<li>Name: <%= station["name"] %>, Address: <%= station["street_address"] %>, <%= station["zip"] %></li>
+	<li>Name: <%= station["station_name"] %>, Address: <%= station["street_address"] %>, <%= station["zip"] %>, Fuel Type: <%= station["fuel_type_code"] %>, Distance: <%= station["distance"] %>, Access Times: <%= station["access_days_time"] %></li>
     <% end %>
 </ol>

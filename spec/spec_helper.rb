@@ -2,6 +2,7 @@ require 'simplecov'
 SimpleCov.start
 
 require "vcr"
+require "capybara/rspec"
 
 VCR.configure do |config|
   config.cassette_library_dir = "fixtures/vcr_cassettes"

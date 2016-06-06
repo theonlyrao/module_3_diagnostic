@@ -1,1 +1,7 @@
 <h1>Search Show Page</h1>
+
+<%= form_tag("/search", method: "get") do %>
+    <%= label_tag(:zip, "Zip") %>
+    <%= text_field_tag(:zip) %>
+    <%= submit_tag("Locate") %>
+<% end %>

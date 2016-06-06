@@ -14,27 +14,27 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2016-06-06T10:31:25-06:00">2016-06-06T10:31:25-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2016-06-06T10:40:06-06:00">2016-06-06T10:40:06-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">97.53%</span></span>
+    (<span class="covered_percent"><span class="green">96.59%</span></span>
      covered at
      <span class="covered_strength">
-       <span class="red">
-         0.98
+       <span class="green">
+         1.0
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>20</b> files in total.
-    <b>81</b> relevant lines. 
-    <span class="green"><b>79</b> lines covered</span> and
-    <span class="red"><b>2</b> lines missed </span>
+    <b>22</b> files in total.
+    <b>88</b> relevant lines. 
+    <span class="green"><b>85</b> lines covered</span> and
+    <span class="red"><b>3</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -71,9 +71,19 @@
       </tr>
       
       <tr>
+        <td class="strong"><a href="#81a0c0463e488957eae2ac8d6578af7765067749" class="src_link" title="app/controllers/setup_controller.rb">app/controllers/setup_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>3</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#955551914d2d4064282a8ad1d0e6915e104259ae" class="src_link" title="app/controllers/transportation_fuel_controller.rb">app/controllers/transportation_fuel_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>9</td>
+        <td>14</td>
         <td>7</td>
         <td>7</td>
         <td>0</td>
@@ -197,7 +207,7 @@
         <td>3</td>
         <td>3</td>
         <td>0</td>
-        <td>1.0</td>
+        <td>1.3</td>
       </tr>
       
       <tr>
@@ -231,13 +241,23 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#5490e782f400eab3073ed0fde56c1af5e5792402" class="src_link" title="spec/controllers/transportation_fuel_controller_spec.rb">spec/controllers/transportation_fuel_controller_spec.rb</a></td>
+        <td class="strong"><a href="#fa1d109622f8b7e933831ae656e128e3974ae815" class="src_link" title="spec/controllers/setup_controller_spec.rb">spec/controllers/setup_controller_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>22</td>
-        <td>9</td>
-        <td>9</td>
+        <td>11</td>
+        <td>7</td>
+        <td>7</td>
         <td>0</td>
         <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#5490e782f400eab3073ed0fde56c1af5e5792402" class="src_link" title="spec/controllers/transportation_fuel_controller_spec.rb">spec/controllers/transportation_fuel_controller_spec.rb</a></td>
+        <td class="yellow strong">87.5 %</td>
+        <td>39</td>
+        <td>8</td>
+        <td>7</td>
+        <td>1</td>
+        <td>0.9</td>
       </tr>
       
       <tr>
@@ -247,7 +267,7 @@
         <td>23</td>
         <td>23</td>
         <td>0</td>
-        <td>1.0</td>
+        <td>1.1</td>
       </tr>
       
     </tbody>
@@ -386,6 +406,42 @@
   </pre>
 </div>
       
+        <div class="source_table" id="81a0c0463e488957eae2ac8d6578af7765067749">
+  <div class="header">
+    <h3>app/controllers/setup_controller.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>1</b> relevant lines. 
+      <span class="green"><b>1</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class SetupController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
         <div class="source_table" id="955551914d2d4064282a8ad1d0e6915e104259ae">
   <div class="header">
     <h3>app/controllers/transportation_fuel_controller.rb</h3>
@@ -421,34 +477,64 @@
         <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
-          <code class="ruby">    conn = Faraday.new(&quot;https://developer.nrel.gov&quot;)</code>
+          <code class="ruby">    if params[&quot;distance&quot;] == &quot;&quot;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="5">
           <span class="hits">1</span>
           
-          <code class="ruby">    response = conn.get &quot;/api/alt-fuel-stations/v1/nearest.json?api_key=#{Pusher.nrel_api_key}&amp;location=#{zip}&amp;raidus=6&amp;fuel_type=ELEC,LPG&amp;limit=10&quot;</code>
+          <code class="ruby">      distance = 6</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
-          <code class="ruby">    parsed = JSON.parse(response.body)</code>
+          <code class="ruby">    else</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="7">
           <span class="hits">1</span>
           
-          <code class="ruby">    @stations = parsed[&quot;fuel_stations&quot;]</code>
+          <code class="ruby">      distance = params[&quot;distance&quot;]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="8">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">    conn = Faraday.new(&quot;https://developer.nrel.gov&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">    response = conn.get &quot;/api/alt-fuel-stations/v1/nearest.json?api_key=#{Pusher.nrel_api_key}&amp;location=#{zip}&amp;raidus=#{distance}&amp;fuel_type=ELEC,LPG&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">    parsed = JSON.parse(response.body)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">    @stations = parsed[&quot;fuel_stations&quot;]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
           
           
           <code class="ruby">end</code>
@@ -1420,8 +1506,8 @@
           <code class="ruby">  def self.nrel_api_key</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="3">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="3">
+          <span class="hits">2</span>
           
           <code class="ruby">    ENV[&quot;nrel_api_key&quot;]</code>
         </li>
@@ -1628,14 +1714,98 @@
   </pre>
 </div>
       
+        <div class="source_table" id="fa1d109622f8b7e933831ae656e128e3974ae815">
+  <div class="header">
+    <h3>spec/controllers/setup_controller_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>7</b> relevant lines. 
+      <span class="green"><b>7</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">RSpec.describe SetupController, type: :controller do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;works&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    VCR.use_cassette(&quot;setup&quot;) do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      conn = Faraday.new(&quot;https://developer.nrel.gov&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      response = conn.get &quot;/api/utility_rates/v3.json?api_key=#{Pusher.nrel_api_key}&amp;lat=35.45&amp;lon=-82.98&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(response.body).to include(&quot;Ventyx Research&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
         <div class="source_table" id="5490e782f400eab3073ed0fde56c1af5e5792402">
   <div class="header">
     <h3>spec/controllers/transportation_fuel_controller_spec.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h4><span class="yellow">87.5 %</span> covered</h4>
     <div>
-      <b>9</b> relevant lines. 
-      <span class="green"><b>9</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <b>8</b> relevant lines. 
+      <span class="green"><b>7</b> lines covered</span> and
+      <span class="red"><b>1</b> lines missed.</span>
     </div>
   </div>
   
@@ -1744,16 +1914,16 @@
           <code class="ruby">      #expect(current_url).to eq(&quot;http::localhost/3000/search?zip=380201&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="18">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="18">
           
-          <code class="ruby">      save_and_open_page</code>
+          
+          <code class="ruby">      expect(page).to have_link(&quot;2&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="19">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="19">
           
-          <code class="ruby">      expect(page).to have_content(&quot;10 closest stations&quot;)</code>
+          
+          <code class="ruby">      expect(page).not_to have_link(&quot;3&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="20">
@@ -1769,6 +1939,108 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">  it &quot;gets stations by locationa and distance&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">    VCR.use_cassette(&quot;user_story_2&quot;) do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby"># When I visit &quot;/&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby"># And I fill in the search form with 80203</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby"># And I enter &quot;5&quot; into an optional &quot;Distance&quot; field</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby"># And I click &quot;Locate&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby"># Then I should see a list of the 10 closest stations of any type within 5 miles sorted by distance</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby"># And the results should share the same format as above</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby"># And I should see about 6 pagination links at the bottom of the results (As of the writing of this story there are 63 results. Number of links should be RESULTS divided by 10)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby">      visit root_path</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby">      fill_in &quot;Zip&quot;, with: &quot;80203&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby">      fill_in &quot;Distance&quot;, with: &quot;80203&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="35">
+          
+          
+          <code class="ruby">      click_on &quot;Locate&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby">      expect(page).to have_link(&quot;3&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="37">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="38">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="39">
           
           
           <code class="ruby">end</code>
@@ -2170,8 +2442,8 @@
           <code class="ruby">  config.before(:each) do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="64">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="64">
+          <span class="hits">2</span>
           
           <code class="ruby">    DatabaseCleaner.strategy = :truncation</code>
         </li>
@@ -2194,8 +2466,8 @@
           <code class="ruby">  config.before(:each) do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="68">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="68">
+          <span class="hits">2</span>
           
           <code class="ruby">    DatabaseCleaner.start</code>
         </li>
@@ -2218,8 +2490,8 @@
           <code class="ruby">  config.after(:each) do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="72">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="72">
+          <span class="hits">2</span>
           
           <code class="ruby">    DatabaseCleaner.clean</code>
         </li>

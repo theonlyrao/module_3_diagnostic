@@ -15,6 +15,7 @@ gem "figaro"
 gem "faraday"
 gem 'active_model_serializers', github: "rails-api/active_model_serializers"
 gem 'responders'
+gem 'will_paginate', '~> 3.1.0'
 
 group :development, :test do
   gem 'byebug'

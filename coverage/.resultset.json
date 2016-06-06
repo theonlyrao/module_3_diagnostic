@@ -1,24 +1,13 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/ashwin/Turing/misc/alt-fuel-finder/spec/controllers/transportation_fuel_controller_spec.rb": [
+      "/Users/ashwin/Turing/misc/alt-fuel-finder/spec/controllers/setup_controller_spec.rb": [
         1,
         null,
         1,
         1,
         1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
         1,
-        1,
-        1,
-        null,
         1,
         1,
         null,
@@ -89,15 +78,15 @@
         null,
         null,
         1,
-        1,
+        2,
         null,
         null,
         1,
-        1,
+        2,
         null,
         null,
         1,
-        1,
+        2,
         null,
         null,
         null,
@@ -253,7 +242,7 @@
       "/Users/ashwin/Turing/misc/alt-fuel-finder/config/initializers/pusher.rb": [
         1,
         1,
-        1,
+        2,
         null,
         null,
         null
@@ -289,13 +278,7 @@
         1,
         null
       ],
-      "/Users/ashwin/Turing/misc/alt-fuel-finder/app/controllers/transportation_fuel_controller.rb": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
+      "/Users/ashwin/Turing/misc/alt-fuel-finder/app/controllers/setup_controller.rb": [
         1,
         null,
         null
@@ -305,6 +288,40 @@
         null,
         null,
         1,
+        null
+      ],
+      "/Users/ashwin/Turing/misc/alt-fuel-finder/spec/controllers/transportation_fuel_controller_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/Users/ashwin/Turing/misc/alt-fuel-finder/app/controllers/transportation_fuel_controller.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/ashwin/Turing/misc/alt-fuel-finder/app/controllers/search_controller.rb": [
@@ -319,6 +336,6 @@
         null
       ]
     },
-    "timestamp": 1465230685
+    "timestamp": 1465231206
   }
 }

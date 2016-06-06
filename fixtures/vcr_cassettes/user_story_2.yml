@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?api_key=BT4JmJ2aVDKju27MLysr2YhdkUX9pbfeBw8mF1iz&fuel_type=ELEC%2CLPG&location=80203&raidus=6
+    uri: https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?api_key=BT4JmJ2aVDKju27MLysr2YhdkUX9pbfeBw8mF1iz&fuel_type=ELEC%2CLPG&location=80203&raidus=80203
     body:
       encoding: US-ASCII
       string: ''
@@ -37,11 +37,11 @@ http_interactions:
       x-ratelimit-limit:
       - '1000'
       x-ratelimit-remaining:
-      - '989'
+      - '988'
       x-request-id:
-      - 2aa2594a-6c0a-4cad-83e2-f8938082b57b
+      - 964be583-3884-4b11-9df5-696a2805e6b1
       x-runtime:
-      - '0.011304'
+      - '0.011678'
       transfer-encoding:
       - chunked
       connection:
